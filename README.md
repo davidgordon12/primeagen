@@ -4,3 +4,4 @@
 
 ## Completed
 * [x] Generic LinkedList with Push, Pop, Shift and Unshift support.
+* [ ] Generic Queue implementation
