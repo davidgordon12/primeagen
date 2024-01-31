@@ -3,6 +3,7 @@ namespace Dsa
     public class Queue<T>
     {
         List<T> list = new List<T>();
+        
         public void Enqueue(T value)
         {
             list.Push(value);
