@@ -14,7 +14,7 @@ namespace Dsa {
     {
         public Node<T>? head;
 
-        public void Shift(T value)
+        public void Unshift(T value)
         {
             if(head == null)
             {
@@ -28,7 +28,7 @@ namespace Dsa {
             head = newNode;
         }
 
-        public T? Unshift()
+        public T? Shift()
         {
             if(head == null)
             {
