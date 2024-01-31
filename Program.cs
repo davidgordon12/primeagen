@@ -22,6 +22,7 @@
 
     // Should print 3->5->2->9->6
     mylist.Print();
+    Console.WriteLine("\n\n===============\n");
 }
 
 static void QueueTest()
@@ -36,8 +37,17 @@ static void QueueTest()
 
     // Should print 2->3->4
     queue.Print(); 
+    Console.WriteLine("\n\n===============\n");
+}
+
+static void BinarySearchTest()
+{
+    int[] arr = { 0, 1, 3, 9, 13, 21, 30 };
+    int index = Algo.Algorithms.BinarySearch(arr, 13); // Expected return value = 4
+    Console.WriteLine("Expected 4, Got " + index);
+    Console.WriteLine("\n\n===============\n");
 }
 
 LinkedListTest();
-Console.WriteLine("\n\n===============\n");
 QueueTest();
+BinarySearchTest();
