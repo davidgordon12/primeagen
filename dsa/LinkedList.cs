@@ -1,4 +1,4 @@
-namespace LinkedList {
+namespace Dsa {
     public class Node<T>
     {
         public T value;

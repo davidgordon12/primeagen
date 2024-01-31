@@ -1,6 +1,6 @@
-﻿void LinkedListTest()
+﻿static void LinkedListTest()
 {
-    LinkedList.List<int> mylist = new();
+    Dsa.List<int> mylist = new();
     mylist.Pop(); // Should do nothing.
     mylist.Unshift(); // Should do nothing.
 
@@ -24,4 +24,20 @@
     mylist.Print();
 }
 
+static void QueueTest()
+{
+    Dsa.Queue<int> queue = new Dsa.Queue<int>();
+    queue.Enqueue(1);
+    queue.Enqueue(2);
+    queue.Enqueue(3);
+    queue.Enqueue(4);
+
+    queue.Dequeue();
+
+    // Should print 2->3->4
+    queue.Print(); 
+}
+
 LinkedListTest();
+Console.WriteLine("\n\n===============\n");
+QueueTest();
