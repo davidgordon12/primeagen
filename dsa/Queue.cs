@@ -11,7 +11,7 @@ namespace Dsa
 
         public T? Dequeue()
         {
-            return list.Unshift();
+            return list.Shift();
         }
 
         public void Print()
